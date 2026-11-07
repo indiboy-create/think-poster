@@ -1,0 +1,52 @@
+{
+    "name": "youvision/think-poster",
+    "description": "基于 kkokk/poster 的 ThinkPHP 8 海报、验证码与 HTML 转图组件",
+    "keywords": [
+        "thinkphp",
+        "thinkphp8",
+        "poster",
+        "captcha",
+        "qrcode",
+        "kkokk"
+    ],
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "youvision"
+        }
+    ],
+    "require": {
+        "php": ">=8.0",
+        "kkokk/poster": "^3.1",
+        "topthink/framework": "^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Youvision\\ThinkPoster\\": "src/"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "extra": {
+        "think": {
+            "services": [
+                "Youvision\\ThinkPoster\\Service"
+            ]
+        }
+    },
+    "config": {
+        "prefer-stable": true,
+        "sort-packages": true
+    },
+    "archive": {
+        "exclude": [
+            "/vendor",
+            "/tests",
+            "/runtime",
+            "/composer.lock"
+        ]
+    },
+    "minimum-stability": "stable"
+}
